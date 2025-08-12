@@ -742,19 +742,25 @@ footer p {
         justify-content: center;
     }
 
-    /* --- Stats Section Responsivo --- */
-    .stats-container {
-        padding-top: 80px; /* Espaço para o logo não sobrepor o primeiro item */
-    }
+    /* NOVA VERSÃO CORRIGIDA */
+.stats-container {
+    padding: 0; /* Removemos o padding daqui */
+}
 
-    .stats-grid {
-        grid-template-columns: 1fr; /* Uma coluna só */
-    }
-    
-    .central-logo {
-        width: 140px;
-        height: 140px;
-    }
+.stats-grid {
+    grid-template-columns: 1fr; /* Mantém uma coluna */
+    padding-top: 80px; /* Adicionamos um espaço no topo da grade para o logo */
+}
+
+.central-logo {
+    width: 140px;
+    height: 140px;
+    /* Novas regras de posicionamento para o celular */
+    position: absolute;
+    top: 0; /* Alinha ao topo do container */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza e puxa metade para cima */
+}
     
     .central-logo img {
         width: 85%;
@@ -803,3 +809,4 @@ footer p {
         gap: 20px;
     }
 }
+
