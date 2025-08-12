@@ -669,3 +669,137 @@ footer p {
     color: #c7c7c7;
     font-size: 0.9rem;
 }
+/* ======================================================= */
+/* ESTILOS PARA RESPONSIVIDADE               */
+/* ======================================================= */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem; /* Fonte um pouco menor */
+    }
+
+    /* --- Header Responsivo --- */
+    header {
+        flex-direction: column;
+        gap: 10px;
+        position: static; /* Tira o header de cima do conteúdo */
+        padding: 15px;
+    }
+
+    /* --- Hero Section Responsivo --- */
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-image {
+        margin-top: 30px;
+        max-width: 80%;
+    }
+
+    /* --- Features Section Responsivo --- */
+    .features-section {
+        padding: 60px 20px;
+    }
+    
+    .badges-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature-card {
+        width: 90%;
+        max-width: 400px;
+        height: 350px;
+    }
+
+    /* --- About Section Responsivo --- */
+    .about-section {
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+
+    .about-highlight {
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .highlight-time {
+        justify-content: center;
+    }
+
+    /* --- Stats Section Responsivo --- */
+    .stats-container {
+        padding-top: 80px; /* Espaço para o logo não sobrepor o primeiro item */
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr; /* Uma coluna só */
+    }
+    
+    .central-logo {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .central-logo img {
+        width: 85%;
+    }
+
+    /* --- Courses Section Responsivo --- */
+    .course-list {
+        column-count: 1; /* Uma coluna na lista de cursos */
+    }
+
+    .course-list.columns-3 {
+        column-count: 1; /* Também uma coluna para a lista grande */
+    }
+
+    /* --- Polo Section Responsivo --- */
+    .polo-section {
+        flex-direction: column;
+    }
+
+    /* --- Final Cards Responsivo --- */
+    .final-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .final-card {
+        width: 90%;
+        height: 250px;
+    }
+
+    .final-card h2 {
+        writing-mode: horizontal-tb; /* Texto na horizontal */
+        transform: rotate(0deg);
+        font-size: 1.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .final-card::before {
+        background: rgba(0,0,0,0.5); /* Overlay uniforme */
+    }
+
+    /* --- Footer Responsivo --- */
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
