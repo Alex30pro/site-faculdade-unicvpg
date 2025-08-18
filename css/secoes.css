@@ -440,4 +440,26 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     width: 90%;
     margin: 0 auto 30px auto; /* Centraliza e adiciona margem inferior */
+
+}
+
+/* ================================================================= */
+/* AJUSTE DE FONTE PARA CELULAR NA SEÇÃO 'CONHEÇA O UNICV'   */
+/* ================================================================= */
+
+@media (max-width: 768px) {
+
+    /* Diminui o texto "GRADUAÇÃO EAD" no celular */
+    .about-highlight .highlight-text-main {
+        font-size: 1.8rem; 
+    }
+
+    /* Diminui o número gigante "1 ANO E MEIO" */
+    .highlight-time .big-number {
+        font-size: 6rem;
+    }
+
+    .highlight-time .time-text {
+        font-size: 1.5rem;
+    }
 }
