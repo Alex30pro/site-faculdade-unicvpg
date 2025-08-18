@@ -139,6 +139,16 @@
     font-weight: bold;
 }
 
+.instagram a {
+    color: inherit; /* Faz o link herdar a cor dourada do texto pai */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Opcional: Adiciona o sublinhado quando passa o mouse por cima */
+.instagram a:hover {
+    text-decoration: underline;
+}
+
 /* --- Estilos de Texto Dentro do Formulário --- */
 .form-container h3 {
     text-align: center;
@@ -196,4 +206,5 @@
     margin-top: 20px;
     font-size: 0.9rem;
     min-height: 20px;
+
 }
