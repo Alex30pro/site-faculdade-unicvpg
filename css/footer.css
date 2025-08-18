@@ -1,0 +1,28 @@
+/* ======================================================= */
+/* FOOTER (RODAPÉ)                                         */
+/* ======================================================= */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #1a4d3b;
+    border-top: 1px solid #386641;
+}
+
+.footer-logo {
+    width: 100px;
+}
+.footer-logo {
+    width: 120px;
+    border-radius: 25px 10px 25px 10px; /* superior-esquerdo, superior-direito, inferior-direito, inferior-esquerdo */
+}
+
+.footer-qrcode {
+    width: 100px;
+}
+
+footer p {
+    color: #c7c7c7;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,199 @@
+
+/* ======================================================= */
+/* HERO SECTION (TOPO DO SITE)                             */
+/* ======================================================= */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    max-width: 1300px;
+    padding: 120px 20px 50px 20px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.hero-content .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+}
+
+.hero-form {
+    flex: 1.5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* empurra imagem para a direita */
+    gap: 30px;
+}
+
+.form-container {
+    background-color: #1e5943;
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+.hero-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 20px;
+}
+
+.hero-side-image img {
+    max-width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.hero-info {
+    text-align: left;
+    max-width: 320px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f5f5f5;
+}
+
+.hero-info h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.hero-info h3 span {
+    color: #d4a23c; /* dourado */
+}
+
+.hero-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* duas colunas igual ao design */
+    gap: 6px 20px;
+}
+
+.hero-info ul li {
+    position: relative;
+    padding-left: 16px;
+}
+
+.hero-info ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #d4a23c;
+    font-size: 1.2rem;
+}
+
+.preco {
+    margin-top: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.preco-label {
+    background: #d4a23c;
+    color: #000;
+    padding: 4px 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 0.95rem;
+}
+
+.preco-box {
+    background: #d4a23c;
+    color: #000;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.instagram {
+    margin-top: 12px;
+    font-size: 1rem;
+    color: #d4a23c;
+    font-weight: bold;
+}
+
+/* --- Estilos de Texto Dentro do Formulário --- */
+.form-container h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    color: #c7c7c7;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 1rem;
+}
+
+.form-container input:focus {
+    outline: 2px solid #28a745;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #218838;
+}
+
+#form-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    min-height: 20px;
+}

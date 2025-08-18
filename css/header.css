@@ -1,0 +1,44 @@
+
+/* ======================================================= */
+/* HEADER (CABEÇALHO)                                      */
+/* ======================================================= */
+header {
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 120px;
+}
+
+.logo {
+    width: 120px;
+    border-radius: 25px 10px 25px 10px; /* superior-esquerdo, superior-direito, inferior-direito, inferior-esquerdo */
+}
+
+.polo-info {
+    font-weight: bold;
+}
+
+.cta-button {
+    background-color: transparent;
+    border: 2px solid #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #28a745;
+    color: #fff;
+}
