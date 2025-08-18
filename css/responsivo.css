@@ -143,4 +143,34 @@
         flex-direction: column;
         gap: 20px;
     }
+
+    /* ======================================================= */
+    /* AJUSTE FINAL - TAMANHO DO TEXTO DE PREÇO NO CELULAR     */
+    /* ======================================================= */
+    
+    /* Alvo: o container do texto de preço */
+    .hero-info .preco {
+        font-size: 0.9rem; /* Diminui o tamanho geral do texto */
+        /* Centraliza o bloco de preço no celular */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Alvo: a etiqueta "Graduação EAD a partir de" */
+    .hero-info .preco-label {
+        font-size: 0.85rem;
+        margin-bottom: 5px; /* Adiciona um espacinho */
+    }
+    
+    /* Alvo: a caixa com "R$ 89,00" */
+    .hero-info .preco-box {
+        font-size: 1rem;
+        padding: 6px 12px; /* Diminui o espaçamento interno da caixa */
+    }
+    
+    /* Alvo: o texto do Instagram */
+    .hero-info .instagram {
+        font-size: 0.9rem;
+    }
 }
