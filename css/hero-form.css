@@ -107,29 +107,14 @@
     font-size: 1.2rem;
 }
 
-.preco {
-    margin-top: 12px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #fff;
-}
-
-.preco-label {
-    background: #d4a23c;
-    color: #000;
-    padding: 4px 10px;
-    border-radius: 8px;
-    margin-right: 10px;
-    font-size: 0.95rem;
-}
-
-.preco-box {
-    background: #d4a23c;
-    color: #000;
-    padding: 6px 14px;
+.hero-promo-text {
+    background-color: #d4a23c; /* Dourado, como antes */
+    color: #000; /* Texto preto para bom contraste */
+    padding: 10px 15px;
     border-radius: 8px;
     font-weight: 700;
     font-size: 1.1rem;
+    text-align: center;
 }
 
 .instagram {
@@ -208,3 +193,4 @@
     min-height: 20px;
 
 }
+
