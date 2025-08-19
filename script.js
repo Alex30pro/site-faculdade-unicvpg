@@ -34,7 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 fields: [
                     { name: 'firstname', value: nome },
                     { name: 'email', value: email },
-                    { name: 'phone', value: telefone }
+                    { name: 'phone', value: telefone },
+                    { name: 'polo', value: 'Ponta Grossa' }
                 ],
                 context: {
                     pageUri: window.location.href,
@@ -101,4 +102,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
 });
