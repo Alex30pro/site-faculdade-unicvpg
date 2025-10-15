@@ -1,0 +1,41 @@
+/* ======================================================= */
+/* FOOTER (RODAPÉ)                                         */
+/* ======================================================= */
+
+:root {
+  --cor-principal: #0a3d24; 
+  --cor-texto: #ffffff;
+  --cor-destaque-cta: #FFB000; 
+  --cor-destaque-cta-hover: #E8A100; 
+}
+
+strong {
+    font-weight: 700; /* ou 900 para mais forte */
+    color: var(--cor-destaque-cta);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #1a4d3b;
+    border-top: 1px solid #386641;
+}
+
+.footer-logo {
+    width: 100px;
+}
+.footer-logo {
+    width: 120px;
+    border-radius: 25px 10px 25px 10px; 
+}
+
+.footer-qrcode {
+    width: 100px;
+}
+
+footer p {
+    color: #c7c7c7;
+    font-size: 0.9rem;
+}

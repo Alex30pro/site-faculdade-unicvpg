@@ -1,0 +1,534 @@
+/* ======================================================= */
+/* FEATURES SECTION (CARDS DE DESTAQUE)                    */
+/* ======================================================= */
+.features-section {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.badges-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    gap: 20px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.badge img {
+    height: 60px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.feature-card {
+    flex: 1;
+    height: 400px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.card-text {
+    position: relative;
+    z-index: 2;
+}
+
+.card-text h2 {
+    font-size: 2.5rem;
+}
+
+.card-text p {
+    font-size: 1.5rem;
+}
+
+.card-text strong {
+    font-size: 2rem;
+}
+
+.card-1 { background-image: url('../img/card1.png'); }
+.card-2 { background-image: url('../img/card2.png'); }
+.card-3 { background-image: url('../img/card3.png'); }
+
+/* ======================================================= */
+/* ABOUT SECTION (CONHEÇA O UNICV)                         */
+/* ======================================================= */
+.about-section {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    padding: 80px 5%;
+    max-width: 1200px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.cta-button-solid {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button-solid:hover {
+    background-color: #218838;
+}
+
+.about-highlight {
+    flex: 1;
+    text-align: left;
+}
+
+.about-highlight .highlight-text-top {
+    font-size: 1.2rem;
+}
+
+.about-highlight .highlight-text-main {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-highlight .highlight-text-bottom {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #c7c7c7;
+}
+
+.highlight-time {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.highlight-time .big-number {
+    font-size: 10rem;
+    font-weight: 700;
+    color: #28a745;
+    line-height: 0.8;
+    margin-right: 15px;
+}
+
+.highlight-time .time-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+/* ======================================================= */
+/* STATS SECTION (ESTATÍSTICAS)                            */
+/* ======================================================= */
+.stats-section {
+    padding: 100px 20px;
+}
+
+.stats-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.central-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.central-logo img {
+    width: 250%;
+    margin-left: 10px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.stat-pod {
+    min-height: 220px;
+    padding: 20px;
+    border: 2px solid rgba(40, 167, 69, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.stat-pod:nth-child(1) { border-radius: 60px 20px 60px 20px; }
+.stat-pod:nth-child(2) { border-radius: 20px 60px 20px 60px; }
+.stat-pod:nth-child(3) { border-radius: 20px 60px 20px 60px; }
+.stat-pod:nth-child(4) { border-radius: 60px 20px 60px 20px; }
+
+.stat-icon {
+    font-size: 50px;
+    color: #28a745;
+}
+
+/* ======================================================= */
+/* COURSES SECTION (LISTA DE CURSOS)                       */
+/* ======================================================= */
+.courses-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.courses-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.courses-section h2 strong {
+    color: #28a745;
+}
+
+.courses-section > p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.course-accordion {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.accordion-button {
+    background-color: #386641;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+
+.accordion-button:hover, .accordion-button.active {
+    background-color: #28a745;
+}
+
+.accordion-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.course-list {
+    list-style-type: none;
+    padding: 20px 0;
+    text-align: left;
+    color: #c7c7c7;
+    column-count: 2;
+    column-gap: 40px;
+}
+
+.course-list.columns-3 {
+    column-count: 3;
+}
+
+.course-list li {
+    padding: 0;
+}
+
+.course-list li a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    transition: color 0.2s ease;
+}
+
+.course-list li a:hover {
+    color: #fff;
+}
+
+/* ======================================================= */
+/* POLO SECTION (SOBRE O POLO)                             */
+/* ======================================================= */
+.polo-section {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 80px 5%;
+    max-width: 1200px;
+}
+
+.polo-text {
+    flex: 1.2;
+}
+
+.polo-text h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.polo-text h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #a3b18a;
+}
+
+.polo-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.polo-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.polo-images img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ======================================================= */
+/* FINAL CARDS SECTION                                     */
+/* ======================================================= */
+.final-cards-section {
+    padding: 80px 20px;
+}
+
+.final-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.final-card {
+    width: 300px;
+    height: 420px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+.final-card:hover {
+    transform: translateY(-10px);
+}
+
+.final-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.1));
+    z-index: 1;
+}
+
+.final-card h2 {
+    position: relative;
+    z-index: 2;
+    font-size: 1.8rem;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding-left: 10px;
+}
+
+.card-pos { background-image: url('../img/final-card1.png'); }
+.card-2a { background-image: url('../img/final-card2.png'); }
+.card-fp { background-image: url('../img/final-card3.png'); }
+
+/* ======================================================= */
+/* EFEITO DE VIDRO/TRANSPARÊNCIA PARA AS SEÇÕES          */
+/* ======================================================= */
+.features-section,
+.about-section,
+.stats-section,
+.courses-section,
+.polo-section,
+.final-cards-section {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 90%;
+    margin: 0 auto 30px auto; /* Centraliza e adiciona margem inferior */
+}
+
+.about-section .cta-button-solid {
+    background-color: var(--cor-destaque-cta);
+    color: var(--cor-principal);
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.about-section .cta-button-solid:hover {
+    background-color: var(--cor-destaque-cta-hover);
+    transform: scale(1.05);
+}
+
+
+.testimonials-section {
+    background-color: #f0f4f2; /* Um cinza-esverdeado bem claro para variar o fundo */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    color: var(--cor-principal);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid var(--cor-principal);
+    margin-bottom: 20px;
+}
+
+.testimonial-card .testimonial-quote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Faz com que os cards tenham a mesma altura */
+}
+
+.testimonial-card .testimonial-author {
+    font-weight: bold;
+    color: var(--cor-principal);
+}
+
+/* ================================================================= */
+/* AJUSTE DE FONTE PARA CELULAR NA SEÇÃO 'CONHEÇA O UNICV'   */
+/* ================================================================= */
+
+@media (max-width: 768px) {
+
+    .about-highlight .highlight-text-main {
+        font-size: 1.8rem; 
+    }
+
+    .highlight-time .big-number {
+        font-size: 6rem;
+    }
+
+    .highlight-time .time-text {
+        font-size: 1.5rem;
+    }
+}
