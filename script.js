@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // --- LÓGICA DO FORMULÁRIO ---
+
     const form = document.getElementById('lead-form');
     if (form) {
         const captchaLabel = document.getElementById('captcha-label');
